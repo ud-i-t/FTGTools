@@ -1,0 +1,98 @@
+﻿*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-color: #f6f6f9;
+}
+
+body{
+  background-color: #f6f6f9;
+  font-family: "M PLUS 1";
+  font-size: 16px;
+  color: #333;
+}
+
+a:link{
+  text-decoration: none;
+  color: #72640c;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #72640c;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #72640c;
+}
+
+h2{
+  text-align: center;
+  margin-top: 24px;
+}
+
+h3{
+  margin-left: 8px;
+  margin-bottom: 8px;
+  color: #666;
+  border-bottom: solid 2px #666;
+}
+
+div#wrapper{
+  margin: 0px;
+  padding: 0px;
+}
+
+div.match{
+  float: left;
+  width: 932px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+div.player{
+  float: left;
+  width: 416px;
+  height: 120px;
+  margin: 0px 8px 0 8px;
+  padding: 12px;
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+
+div.status{
+  position: absolute;
+  width: 24px;
+  height: 120px;
+  background-color: #ccc;
+}
+
+div.winner>div.status{
+  background-color: orange;
+}
+
+div.loser>div.status{
+  background-color: #666;
+}
+
+div.winner{
+  background-color: #ffeecc;
+}
+
+div.loser{
+  background-color: #ddd;
+}
+
+div.copy{
+  margin-left: 36px;
+  font-size: 24px;
+}
+
+div.playerName{
+  margin-left: 36px;
+  font-size: 48px;
+  font-family: "M PLUS 1 Bold";
+}
