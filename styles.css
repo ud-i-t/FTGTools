@@ -35,39 +35,50 @@ h2{
 }
 
 h3{
-  margin-left: 8px;
   margin-bottom: 8px;
   color: #666;
   border-bottom: solid 2px #666;
 }
 
 div#wrapper{
-  margin: 0px;
-  padding: 0px;
+  width: 1920px;
+}
+
+div#content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 880px;
 }
 
 div.match{
-  float: left;
-  width: 932px;
-  margin-top: 16px;
-  margin-left: 16px;
+  flex: 25%;
+  width: 47%;
+}
+
+div.players{
+  display: flex;
 }
 
 div.player{
-  float: left;
-  width: 416px;
-  height: 120px;
-  margin: 0px 8px 0 8px;
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin: 0;
   padding: 12px;
   background-color: #fff;
   border: solid 1px #ccc;
 }
 
 div.status{
-  position: absolute;
+  display: block;
+  position: relative;
   width: 24px;
   height: 120px;
   background-color: #ccc;
+  float: left;
 }
 
 div.winner>div.status{
@@ -87,12 +98,16 @@ div.loser{
 }
 
 div.copy{
-  margin-left: 36px;
+  position: relative;
+  top: 10px;
+  left: 12px;
   font-size: 24px;
 }
 
 div.playerName{
-  margin-left: 36px;
+  position: relative;
+  top: 10px;
+  left: 10px;
   font-size: 48px;
   font-family: "M PLUS 1 Bold";
 }
