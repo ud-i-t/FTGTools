@@ -31,7 +31,10 @@ a:hover{
 
 h2{
   text-align: center;
-  margin-top: 24px;
+  font-family: "M PLUS 1 ExtraBold";
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 48px;
 }
 
 h3{
@@ -76,7 +79,7 @@ div.status{
   display: block;
   position: relative;
   width: 24px;
-  height: 120px;
+  height: 140px;
   background-color: #ccc;
   float: left;
 }
@@ -99,15 +102,22 @@ div.loser{
 
 div.copy{
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 12px;
   font-size: 24px;
 }
 
 div.playerName{
   position: relative;
-  top: 10px;
+  top: -4px;
   left: 10px;
   font-size: 48px;
-  font-family: "M PLUS 1 Bold";
+  font-family: "M PLUS 1 ExtraBold";
+}
+
+div.rank{
+  position: relative;
+  top: -4px;
+  left: 12px;
+  font-size: 24px;
 }
