@@ -11,6 +11,7 @@ def read_players_file(file_path):
 
 def generate_html(players_data):
     html_output = ''
+    
     matches = split_list(players_data, 2)
     matchNo = 1
     for match in matches:
@@ -34,11 +35,20 @@ def generate_match(players_data, matchNo):
 def generate_players(players_data):
     html_output = ''
     for player in players_data:
-        player_name, character_name = player.strip().split(', ')
-        html_output += '        <div class="player">\n'
+        status, player_name, second_name, character_name, rank = player.strip().split(', ')
+        match status: 
+            case "W":
+                status_class = " winner"
+            case "L":
+                status_class = " loser"
+            case _:
+                status_class = ""
+        
+        html_output += f'        <div class="player{status_class}">\n'
         html_output += '            <div class="status"></div>\n'
-        html_output += f'            <div class="copy">{character_name}</div>\n'
+        html_output += f'            <div class="copy">{second_name}</div>\n'
         html_output += f'            <div class="playerName">{player_name}</div>\n'
+        html_output += f'            <div class="rank">{character_name}/{rank}</div>\n'
         html_output += '        </div>\n'
 
     return html_output
