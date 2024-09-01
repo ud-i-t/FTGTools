@@ -18,7 +18,7 @@ with open(output_file_path, 'w', encoding='utf-8') as file:
     for match in matches:
         player1 = match[0].strip().split(', ')
         player2 = match[1].strip().split(', ')
-        file.write(f'第{matchNo}試合 {player1[1]} VS {player2[1]} 試合を始めてください\n')
+        file.write(f'第{matchNo}試合 {player1[1]}さん VS {player2[1]}さん 試合を始めてください！\n')
         matchNo += 1
 
 print(f"置換後の内容を {output_file_path} に出力しました。")
