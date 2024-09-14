@@ -16,9 +16,11 @@ output_file_path = 'announcement.txt'
 matchNo = 1
 with open(output_file_path, 'w', encoding='utf-8') as file:
     for match in matches:
-        player1 = match[0].strip().split(', ')
-        player2 = match[1].strip().split(', ')
-        file.write(f'第{matchNo}試合 {player1[1]}さん VS {player2[1]}さん 試合を始めてください！\n')
+        player1 = match[0].strip().split(',')
+        player2 = match[1].strip().split(',')
+        file.write(f'第{matchNo}試合 1P側: {player1[1]}選手 VS 2P側: {player2[1]}選手 カスタムルームへお越しください\n')
+        file.write(f'第{matchNo}試合 1P側: {player1[1]}選手 VS 2P側: {player2[1]}選手 試合を始めてください！\n')
+        file.write(f'第{matchNo}試合 1P側: {player1[1]}選手 VS 2P側: {player2[1]}選手 試合を開始しました 次の試合に出場される方は準備をお願いします！\n')
         matchNo += 1
 
 print(f"置換後の内容を {output_file_path} に出力しました。")
