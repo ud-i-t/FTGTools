@@ -35,7 +35,7 @@ def generate_match(players_data, matchNo):
 def generate_players(players_data):
     html_output = ''
     for player in players_data:
-        status, player_name, second_name, character_name, rank = player.strip().split(', ')
+        status, player_name, second_name, character_name, rank = player.strip().split(',')
         match status: 
             case "W":
                 status_class = " winner"
