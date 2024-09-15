@@ -47,14 +47,14 @@ matches = round_robin_participants(participants)
 non_overlapping_sets = find_non_overlapping_matches(matches)
 
 # JSONデータの準備
-output_data = {"matches": []}
+output_data = {"Items": []}
 
 for match_set in non_overlapping_sets:
-    match_list = []
+    match_list = {"Items": []}
     for match in match_set:
-        match_list.append({"player1": match[0], "player2": match[1]})
-    output_data["matches"].append(match_list)
+        match_list["Items"].append({"Player1Index": match[0], "Player2Index": match[1], "CenterText": ""})
+    output_data["Items"].append(match_list)
 
 # 結果をJSONファイルに保存
-filename = "match_results.json"
+filename = "matches.json"
 save_to_json(output_data, filename)
